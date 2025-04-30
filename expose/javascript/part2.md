@@ -66,3 +66,14 @@ At `i = 2`, `discountedPrice = prices[2] * (1 - discount) = 300 * (1 - 0.5) = 15
     F - `true`. `Boolean(2)` is `true` since 2 is converted to a boolean and any value != 0 is considered `true`. Therefore, `true` is `true`, so `true`.
 
 15. The difference between `==` and `===` is that `==` changes the type of what's being compared to a common type and then compares them while `===` takes the things being compared as they are.
+
+
+17. `[ 2, 4, 6 ]`. We call `modifyArray()` with parameters `array = [1,2,3]` and `callback = doSomething()`. `doSomething()` returns twice whatever you pass into it and so when we iterate through the `for` loop in `modifyArray()`, we push twice the value of `array[i]` into `newArr`.
+
+When `i = 0`, we push `callback(array[0]) = doSomething(array[0]) = doSomething(1) = 1 * 2 = 2` into `newArr`. Now, `newArr` becomes `[ 2 ]`.
+
+When `i = 1`, we push `callback(array[1]) = doSomething(array[1]) = doSomething(2) = 2 * 2 = 4` into `newArr`. Now, `newArr` becomes `[ 2, 4 ]`.
+
+When `i = 2`, we push `callback(array[2]) = doSomething(array[2]) = doSomething(3) = 3 * 2 = 6` into `newArr`. Now, `newArr` becomes `[ 2, 4, 6 ]`.
+
+Then, the `for` loop stops because `i` is no longer < `array.length` or 3. So, in the end, we return `newArr`, which is `[ 2, 4, 6 ]`
