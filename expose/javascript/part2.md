@@ -67,6 +67,7 @@ At `i = 2`, `discountedPrice = prices[2] * (1 - discount) = 300 * (1 - 0.5) = 15
 
 15. The difference between `==` and `===` is that `==` changes the type of what's being compared to a common type and then compares them while `===` takes the things being compared as they are.
 
+16. `part2-question16.js`
 
 17. `[ 2, 4, 6 ]`. We call `modifyArray()` with parameters `array = [1,2,3]` and `callback = doSomething()`. `doSomething()` returns twice whatever you pass into it and so when we iterate through the `for` loop in `modifyArray()`, we push twice the value of `array[i]` into `newArr`.
 
