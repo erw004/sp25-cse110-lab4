@@ -78,3 +78,11 @@ When `i = 1`, we push `callback(array[1]) = doSomething(array[1]) = doSomething(
 When `i = 2`, we push `callback(array[2]) = doSomething(array[2]) = doSomething(3) = 3 * 2 = 6` into `newArr`. Now, `newArr` becomes `[ 2, 4, 6 ]`.
 
 Then, the `for` loop stops because `i` is no longer < `array.length` or 3. So, in the end, we return `newArr`, which is `[ 2, 4, 6 ]`
+
+18. `part2-question18.js`
+
+19. 
+    1 \
+    4 \
+    3 \
+    2 
