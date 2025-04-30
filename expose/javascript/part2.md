@@ -34,3 +34,35 @@ At `i = 2`, `discountedPrice = prices[2] * (1 - discount) = 300 * (1 - 0.5) = 15
     D - `student['Favorite Teacher'].name`
     
     E - `student.courseLoad[0]`
+
+13. 
+    A - `32` since `'3'` is a string and when we add `2`, it treats the whole thing as a string, appending `'2'`.
+
+    B - `1` since even though `'3'` is a string, because there is subtraction, `'3'` is treated as a number, leading to 3 - 2 = 1.
+
+    C - `3`. `null` becomes `0` because we had `3` come first and then addition, making it 3 + 0 = 3.
+
+    D - `3null`. `null` gets interpreted as a string because `'3'` is. So, `'null'` gets appended to `'3'`, becoming `3null`.
+
+    E - `4`. `true` gets converted to a number, more specifically `1`. So, 1 + 3 = 4.
+
+    F - `0`. Both get converted to numbers and they both correspond to 0, so 0 + 0 = 0.
+
+    G - `3undefined`. Same idea as D but `undefined` is converted to `'undefined'`.
+
+    H - `NaN` since both `'3'` and `undefined` convert to numbers, but `undefined` becomes `NaN`, leading to the whole expression resulting in `NaN`.
+
+14. .
+    A - `true`. Both are treated as numbers and 2 is > 1.
+
+    B - `false`. Both are compared as strings and since `'2'` is lexicographically > `'12'`, it is false.
+
+    C - `true`. Both are treated as numbers and thus are the same value of 2.
+
+    D - `false`. One is a number, the other is a string, so false.
+
+    E - `false`. `true` is converted to 1, which isn't a 2.
+
+    F - `true`. `Boolean(2)` is `true` since 2 is converted to a boolean and any value != 0 is considered `true`. Therefore, `true` is `true`, so `true`.
+
+15. The difference between `==` and `===` is that `==` changes the type of what's being compared to a common type and then compares them while `===` takes the things being compared as they are.
